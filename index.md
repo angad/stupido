@@ -3,9 +3,10 @@
 <button class="yes" 
 onClick="(
     function() {
-        $('.yes').finish().animate({
-            left: '-=30'
-        });
+        var d = document.getElementByClass('yes');
+        d.style.position = 'absolute';
+        d.style.left = (Math.random()*100)+'px';
+        d.style.top = (Math.random()*100)+'px';
         return false;
         }
     )(); 
